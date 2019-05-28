@@ -12,11 +12,23 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title> Chart JS </title>
+
 </head>
 
-<body>
-    <div class="container">
-        <canvas id="myChart"></canvas>
+<body class="bg-success pt-5">
+    <div class="container mt-5">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <!-- <div class="card-body">
+                    <h4>
+                        Dhaka City Population Rate in Bangladesh
+                    </h4>
+                </div> -->
+                <div class="card-body">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -27,7 +39,7 @@
 
         // Global options
         Chart.defaults.global.defaultFontFamily = 'Roboto';
-        Chart.defaults.global.defaultFontSize = 12;
+        // Chart.defaults.global.defaultFontSize = 12;
 
         let dhakaCityPop = new Chart(myChart, {
             type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
@@ -62,10 +74,10 @@
                     position: 'right'
                 },
                 layout: {
-                    padding: {
-                        top: 20,
-                        bottom: 20
-                    }
+                    // padding: {
+                    //     top: 20,
+                    //     bottom: 20
+                    // }
                 },
                 tooltips: {
                     // enabled: false
