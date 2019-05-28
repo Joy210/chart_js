@@ -30,7 +30,7 @@
         Chart.defaults.global.defaultFontSize = 12;
 
         let dhakaCityPop = new Chart(myChart, {
-            type: 'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data: {
                 labels: ['2000', '2005', '2010', '2015', '2019'],
                 datasets: [{
@@ -58,7 +58,7 @@
                     // }
                 },
                 legend: {
-                    // display: false,
+                    display: false,
                     position: 'right'
                 },
                 layout: {
